@@ -1,0 +1,54 @@
+/* === GALERÍA 1 CON GRID === */
+
+.container-g1 {
+  width: 100%;
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 400px;
+  gap: 8px;
+}
+.container-g1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: grey;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+}
+.container-g1 img:hover {
+  transform: scale(1.3);
+  box-shadow: grey 1px 1px 10px;
+}
+.span2 {
+  grid-column: span 2;
+}
+.span3 {
+  grid-column: span 3;
+}
+.row2 {
+  grid-row: span 2;
+}
+.box5 {
+  grid-area: 2 / 1 / 4 / 3;
+}
+
+/* === GALERÍA 2 CON PROPIEDAD COLUMNS=== */
+.container-g2 {
+  width: 100%;
+  padding: 0 10%;
+  columns: 200px;
+  column-gap: 8px;
+}
+.container-g2 img {
+  width: 100%;
+  background: grey;
+  border-radius: 8px;
+  box-shadow: rgb(42, 42, 42) 0px 1px 4px;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 4px;
+}
+.container-g2 img:hover {
+  transform: scale(1.3);
+  box-shadow: grey 1px 1px 10px;
+}

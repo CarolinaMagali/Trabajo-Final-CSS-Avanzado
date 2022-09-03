@@ -1,0 +1,109 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7%;
+}
+
+.card-container {
+  width: 25%;
+  height: 90vh;
+  background-color: var(--color-1);
+  position: relative;
+  border-radius: 2%;
+  overflow: hidden;
+}
+
+.card-container:hover {
+  background-color: white;
+  transition: all 0.9s ease-in-out;
+}
+
+.card-text {
+  position: absolute;
+  margin: 25% 10%;
+  font-family: "Gothic A1", sans-serif;
+  left: -100%;
+  transition: 1s;
+}
+
+.card-container:hover .card-text {
+  left: 5%;
+}
+.card-container:hover .card-text h1 {
+  transition-delay: 0.3s;
+}
+.card-container:hover .card-text p {
+  transition-delay: 0.4s;
+}
+.card-boton {
+  position: absolute;
+  top: 27%;
+  left: 10%;
+}
+.card-button {
+  width: 8vw;
+  height: 8vh;
+  border: none;
+  font-size: larger;
+  background: transparent;
+  color: var(--color-1);
+  cursor: pointer;
+}
+.card-container:hover .card-button {
+  transition: 0.9s;
+  transition-delay: 00.2s;
+  transform: scale(0.9);
+}
+
+
+/* === CARD 1 === */
+
+.card-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/img.png);
+  background-repeat: none;
+  background-size: cover;
+  border-radius: 2%;
+  filter: drop-shadow(10px 10px 20px #0009);
+}
+
+.card-img:hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/img1.png);
+  background-repeat: none;
+  background-size: cover;
+  transition: all 1s ease-in-out;
+}
+
+/* === CARD 2 === */
+
+.card2-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/img2.png);
+  background-repeat: none;
+  background-size: cover;
+  border-radius: 2%;
+  filter: drop-shadow(10px 10px 20px #0009);
+  transition: all 1s ease-in-out;
+}
+
+/* === CARD 3 === */
+
+.card3-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/img3.png");
+  background-repeat: none;
+  background-size: cover;
+  border-radius: 2%;
+  filter: drop-shadow(10px 10px 20px #0009);
+  transition: all 1s ease-in-out;
+}

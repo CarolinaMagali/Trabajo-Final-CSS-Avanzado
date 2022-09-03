@@ -1,0 +1,53 @@
+/* === HEADER === */
+
+.menu {
+  position: relative;
+  height: 15vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 4vw;
+  font-weight: 100;
+  font-size: large;
+  text-shadow: grey 2px 2px 5px;
+}
+.menu li {
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  color: var(--color-font);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.menu a:hover {
+  color: rgb(161, 159, 159);
+  transform: scale(1.1);
+}
+
+/* === FOOTER === */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
+}
+footer p {
+  padding: 0;
+  color: var(--color-font);
+}
+.volver {
+  position: fixed;
+  align-items: center;
+  width: auto;
+  height: auto;
+  left: 85vw;
+  bottom: 11vh;
+}
+.volver a {
+  text-decoration: none;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  color: var(--color-font);
+}

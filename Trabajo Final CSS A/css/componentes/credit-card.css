@@ -1,0 +1,134 @@
+.credCard {
+  display: flex;
+  justify-content: center;
+}
+
+.cc-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px 30px;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+.cc-container {
+  width: 25vw;
+  height: 35vh;
+  place-self: center;
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
+}
+.cc-tarjeta {
+  width: 100%;
+  height: 100%;
+  perspective: 800px;
+}
+.cc-card {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/credit-card/fondo1.jpg);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: 2s;
+  position: absolute;
+  backface-visibility: hidden;
+  color: rgb(231, 231, 231);
+}
+.front {
+  transform: rotateY(0deg);
+  z-index: 100;
+  text-shadow: black 2px 2px;
+}
+.cc-card p {
+  position: relative;
+  top: 10%;
+  left: 8%;
+  font-size: larger;
+  font-style: italic;
+  color: rgb(232, 191, 57);
+  font-weight: 700;
+}
+.chip {
+  position: relative;
+  top: 16%;
+  left: 8%;
+}
+.img-chip {
+  width: 17%;
+  height: 6vh;
+}
+.numero {
+  position: relative;
+  top: 26%;
+  left: 8%;
+  font-size: large;
+  letter-spacing: 4px;
+}
+.name {
+  position: relative;
+  top: 30%;
+  left: 8%;
+  font-size: small;
+  letter-spacing: 5px;
+}
+.fechaVenc {
+  display: flex;
+  position: relative;
+  top: 37%;
+  left: 50%;
+}
+.visa {
+  display: flex;
+  position: relative;
+  top: 20%;
+  left: 75%;
+}
+.img-visa {
+  width: 20%;
+  height: 7vh;
+  border-radius: 3px;
+}
+.back {
+  transform: rotateY(-180deg);
+}
+#seguridadPadre:focus-within ~ .cc-container .front {
+  transform: rotateY(-180deg);
+}
+
+.franja {
+  background-color: black;
+  position: relative;
+  top: 7%;
+  width: 100%;
+  height: 20%;
+}
+.blanco {
+  background-color: white;
+  position: relative;
+  display: flex;
+  padding: 2%;
+  top: 16%;
+  left: 8%;
+  width: 65%;
+  height: 10%;
+  align-items: center;
+  justify-content: end;
+  color: black;
+  font-weight: 600;
+}
+.texto {
+  position: relative;
+  top: 25%;
+  left: 8%;
+  width: 80%;
+  color: white;
+  font-size: x-small;
+  text-align: justify;
+}
+#seguridadPadre:focus-within ~ .cc-container .back {
+  transform: rotateY(-360deg);
+}
